@@ -1,0 +1,30 @@
+﻿ansys\_sphinx\_theme.samples.Complex
+====================================
+
+.. currentmodule:: ansys_sphinx_theme.samples
+
+.. autoclass:: Complex
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~Complex.__init__
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~Complex.abs
+      ~Complex.imag
+      ~Complex.real
+   
+   

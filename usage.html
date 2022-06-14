@@ -1,0 +1,530 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Using this Theme &#8212; Ansys Sphinx Theme</title>
+    
+<script>
+  document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+  document.documentElement.dataset.theme = localStorage.getItem("theme") || "light"
+</script>
+
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=92025949c220c2e29695" rel="stylesheet">
+<link href="_static/styles/pydata-sphinx-theme.css?digest=92025949c220c2e29695" rel="stylesheet">
+
+
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/css/ansys_sphinx_theme.css" />
+
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=92025949c220c2e29695">
+
+    
+        <link href="_static/css/breadcrumbs.css" rel="stylesheet">
+    
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <link rel="shortcut icon" href="_static/ansys-favicon.png"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Documentation Style" href="style.html" />
+    <link rel="prev" title="Ansys Sphinx Theme Documentation 0.4.2" href="index.html" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="docsearch:language" content="None">
+  </head>
+  
+  
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="180" data-default-mode="">
+    <div class="bd-header-announcement container-fluid" id="banner">
+      
+
+    </div>
+
+    
+    
+    <nav class="bd-header navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main"><div class="bd-header__inner container-xl">
+
+  <div id="navbar-start">
+    
+    
+  
+
+
+<a class="navbar-brand logo" href="index.html">
+  
+  
+  
+  
+    <img src="_static/ansys_logo_black_cropped.jpg" class="logo__image only-light" alt="Logo image">
+    <img src="_static/ansys_logo_black_cropped.jpg" class="logo__image only-dark" alt="Logo image">
+  
+  
+</a>
+    
+  </div>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapsible" aria-controls="navbar-collapsible" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="fas fa-bars"></span>
+  </button>
+
+  
+  <div id="navbar-collapsible" class="col-lg-9 collapse navbar-collapse">
+    <div id="navbar-center" class="mr-auto">
+      
+      <div class="navbar-center-item">
+        <ul id="navbar-main-elements" class="navbar-nav">
+    <li class="toctree-l1 current active nav-item">
+ <a class="current reference internal nav-link" href="#">
+  Using this Theme
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="style.html">
+  Documentation Style
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="class_documentation.html">
+  API Documentation
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="coding_style.html">
+  Coding Style and Best Practices
+ </a>
+</li>
+
+    
+</ul>
+      </div>
+      
+    </div>
+
+    <div id="navbar-end">
+      
+      <div class="navbar-end-item">
+        <span id="theme-switch" class="btn btn-sm btn-outline-primary navbar-btn rounded-circle">
+    <a class="theme-switch" data-mode="light"><i class="fas fa-sun"></i></a>
+    <a class="theme-switch" data-mode="dark"><i class="far fa-moon"></i></a>
+    <a class="theme-switch" data-mode="auto"><i class="fas fa-adjust"></i></a>
+</span>
+      </div>
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/pyansys/pyansys-sphinx-theme" rel="noopener" target="_blank" title="GitHub"><span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+  </div>
+</div>
+    </nav>
+    
+    
+        <div class="container-xl">
+    <div class="row">
+        <div class="col-12 col-md-3" id="breadcrumbs-spacer"></div>
+        <div class="col-12 col-md-11 col-xl-9" id="breadcrumbs">
+          
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="style.html" title="Documentation Style"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Ansys Sphinx Theme Documentation 0.4.2"
+             accesskey="P">previous</a> |</li>
+    
+        <li class="nav-item nav-item-additional-breadcrumb"><a href="https://docs.pyansys.com/">PyAnsys</a> » </li>
+    
+    
+        <li class="nav-item nav-item-0"><a href="index.html">Ansys Sphinx Theme</a> » </li>
+    
+
+        <li class="nav-item nav-item-this"><a href="">Using this Theme</a></li> 
+      </ul>
+    </div>
+        </div>
+  </div>
+</div>
+    
+
+
+    <div class="bd-container container-xl">
+      <div class="bd-container__inner row">
+          
+
+<!-- Only show if we have sidebars configured, else just a small margin  -->
+<div class="bd-sidebar-primary col-12 col-md-3 bd-sidebar">
+  <div class="sidebar-start-items"><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <div class="bd-toc-item active">
+    
+  </div>
+</nav>
+  </div>
+  <div class="sidebar-end-items">
+  </div>
+</div>
+
+
+          
+
+
+<div class="bd-sidebar-secondary d-none d-xl-block col-xl-2 bd-toc">
+  
+    
+    <div class="toc-item">
+      
+<div class="tocsection onthispage mt-5 pt-1 pb-3">
+    <i class="fas fa-list"></i> On this page
+</div>
+
+<nav id="bd-toc-nav">
+    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#editing-the-css">
+   Editing the CSS
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#adding-breadcrumbs">
+   Adding Breadcrumbs
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#custom-icons">
+     Custom Icons
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#adding-new-icons">
+     Adding New Icons
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#hiding-icons">
+     Hiding Icons
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+</nav>
+    </div>
+    
+    <div class="toc-item">
+      
+    </div>
+    
+  
+</div>
+
+
+          
+          
+          <div class="bd-content col-12 col-md-9 col-xl-7">
+              
+              <article class="bd-article" role="main">
+                
+  <section id="using-this-theme">
+<h1>Using this Theme<a class="headerlink" href="#using-this-theme" title="Permalink to this headline">#</a></h1>
+<p>Install this theme with:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">ansys</span><span class="o">-</span><span class="n">sphinx</span><span class="o">-</span><span class="n">theme</span>
+</pre></div>
+</div>
+<p>If you are are new to Sphinx, see the
+<a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/quickstart.html">Sphinx Getting Started</a> documentation.
+Next, modify your Sphinx <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> file to use <code class="docutils literal notranslate"><span class="pre">html_theme</span> <span class="pre">=</span>
+<span class="pre">'ansys_sphinx_theme'</span></code>. Consider using the following <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> for this repository:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="sd">&quot;&quot;&quot;Sphinx documentation configuration file.&quot;&quot;&quot;</span>
+<span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span>
+
+<span class="kn">from</span> <span class="nn">sphinx.builders.latex</span> <span class="kn">import</span> <span class="n">LaTeXBuilder</span>
+
+<span class="n">LaTeXBuilder</span><span class="o">.</span><span class="n">supported_image_types</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;image/png&quot;</span><span class="p">,</span> <span class="s2">&quot;image/pdf&quot;</span><span class="p">,</span> <span class="s2">&quot;image/svg+xml&quot;</span><span class="p">]</span>
+
+<span class="kn">from</span> <span class="nn">ansys_sphinx_theme</span> <span class="kn">import</span> <span class="p">(</span>
+    <span class="n">__version__</span><span class="p">,</span>
+    <span class="n">ansys_favicon</span><span class="p">,</span>
+    <span class="n">ansys_logo_black</span><span class="p">,</span>
+    <span class="n">ansys_logo_white</span><span class="p">,</span>
+    <span class="n">ansys_logo_white_cropped</span><span class="p">,</span>
+    <span class="n">latex</span><span class="p">,</span>
+    <span class="n">watermark</span><span class="p">,</span>
+<span class="p">)</span>
+
+<span class="c1"># Project information</span>
+<span class="n">project</span> <span class="o">=</span> <span class="s2">&quot;ansys_sphinx_theme&quot;</span>
+<span class="n">copyright</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;(c) </span><span class="si">{</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span><span class="o">.</span><span class="n">year</span><span class="si">}</span><span class="s2"> ANSYS, Inc. All rights reserved&quot;</span>
+<span class="n">author</span> <span class="o">=</span> <span class="s2">&quot;Ansys Inc.&quot;</span>
+<span class="n">release</span> <span class="o">=</span> <span class="n">version</span> <span class="o">=</span> <span class="n">__version__</span>
+
+<span class="c1"># use the default ansys logo</span>
+<span class="n">html_logo</span> <span class="o">=</span> <span class="n">ansys_logo_black</span>
+<span class="n">html_theme</span> <span class="o">=</span> <span class="s2">&quot;ansys_sphinx_theme&quot;</span>
+
+<span class="c1"># specify the location of your github repo</span>
+<span class="n">html_theme_options</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;github_url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://github.com/pyansys/pyansys-sphinx-theme&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;additional_breadcrumbs&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">(</span><span class="s2">&quot;PyAnsys&quot;</span><span class="p">,</span> <span class="s2">&quot;https://docs.pyansys.com/&quot;</span><span class="p">),</span>
+    <span class="p">],</span>
+<span class="p">}</span>
+
+<span class="n">html_short_title</span> <span class="o">=</span> <span class="n">html_title</span> <span class="o">=</span> <span class="s2">&quot;Ansys Sphinx Theme&quot;</span>
+
+<span class="c1"># Sphinx extensions</span>
+<span class="n">extensions</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s2">&quot;sphinx.ext.autodoc&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;sphinx.ext.autosummary&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;numpydoc&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;sphinx.ext.intersphinx&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;sphinx_copybutton&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;ansys_sphinx_theme&quot;</span><span class="p">,</span>
+<span class="p">]</span>
+
+<span class="c1"># Intersphinx mapping</span>
+<span class="n">intersphinx_mapping</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;python&quot;</span><span class="p">:</span> <span class="p">(</span><span class="s2">&quot;https://docs.python.org/dev&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">),</span>
+    <span class="c1"># kept here as an example</span>
+    <span class="c1"># &quot;scipy&quot;: (&quot;https://docs.scipy.org/doc/scipy/reference&quot;, None),</span>
+    <span class="c1"># &quot;numpy&quot;: (&quot;https://numpy.org/devdocs&quot;, None),</span>
+    <span class="c1"># &quot;matplotlib&quot;: (&quot;https://matplotlib.org/stable&quot;, None),</span>
+    <span class="c1"># &quot;pandas&quot;: (&quot;https://pandas.pydata.org/pandas-docs/stable&quot;, None),</span>
+    <span class="c1"># &quot;pyvista&quot;: (&quot;https://docs.pyvista.org/&quot;, None),</span>
+<span class="p">}</span>
+
+<span class="c1"># numpydoc configuration</span>
+<span class="n">numpydoc_show_class_members</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="n">numpydoc_xref_param_type</span> <span class="o">=</span> <span class="kc">True</span>
+
+<span class="c1"># Consider enabling numpydoc validation. See:</span>
+<span class="c1"># https://numpydoc.readthedocs.io/en/latest/validation.html#</span>
+<span class="n">numpydoc_validate</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="n">numpydoc_validation_checks</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;GL06&quot;</span><span class="p">,</span>  <span class="c1"># Found unknown section</span>
+    <span class="s2">&quot;GL07&quot;</span><span class="p">,</span>  <span class="c1"># Sections are in the wrong order.</span>
+    <span class="s2">&quot;GL08&quot;</span><span class="p">,</span>  <span class="c1"># The object does not have a docstring</span>
+    <span class="s2">&quot;GL09&quot;</span><span class="p">,</span>  <span class="c1"># Deprecation warning should precede extended summary</span>
+    <span class="s2">&quot;GL10&quot;</span><span class="p">,</span>  <span class="c1"># reST directives {directives} must be followed by two colons</span>
+    <span class="s2">&quot;SS01&quot;</span><span class="p">,</span>  <span class="c1"># No summary found</span>
+    <span class="s2">&quot;SS02&quot;</span><span class="p">,</span>  <span class="c1"># Summary does not start with a capital letter</span>
+    <span class="c1"># &quot;SS03&quot;, # Summary does not end with a period</span>
+    <span class="s2">&quot;SS04&quot;</span><span class="p">,</span>  <span class="c1"># Summary contains heading whitespaces</span>
+    <span class="c1"># &quot;SS05&quot;, # Summary must start with infinitive verb, not third person</span>
+    <span class="s2">&quot;RT02&quot;</span><span class="p">,</span>  <span class="c1"># The first line of the Returns section should contain only the</span>
+    <span class="c1"># type, unless multiple values are being returned&quot;</span>
+<span class="p">}</span>
+
+<span class="c1"># Favicon</span>
+<span class="n">html_favicon</span> <span class="o">=</span> <span class="n">ansys_favicon</span>
+
+<span class="c1"># static path</span>
+<span class="n">html_static_path</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;_static&quot;</span><span class="p">]</span>
+
+<span class="c1"># Add any paths that contain templates here, relative to this directory.</span>
+<span class="n">templates_path</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;_templates&quot;</span><span class="p">]</span>
+
+<span class="c1"># The suffix(es) of source filenames.</span>
+<span class="n">source_suffix</span> <span class="o">=</span> <span class="s2">&quot;.rst&quot;</span>
+
+<span class="c1"># The master toctree document.</span>
+<span class="n">master_doc</span> <span class="o">=</span> <span class="s2">&quot;index&quot;</span>
+
+<span class="c1"># additional logos for the latex coverpage</span>
+<span class="n">latex_additional_files</span> <span class="o">=</span> <span class="p">[</span><span class="n">watermark</span><span class="p">,</span> <span class="n">ansys_logo_white</span><span class="p">,</span> <span class="n">ansys_logo_white_cropped</span><span class="p">]</span>
+
+<span class="c1"># change the preamble of latex with customized title page</span>
+<span class="c1"># variables are the title of pdf, watermark</span>
+<span class="n">latex_elements</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;preamble&quot;</span><span class="p">:</span> <span class="n">latex</span><span class="o">.</span><span class="n">generate_preamble</span><span class="p">(</span><span class="n">html_title</span><span class="p">)}</span>
+</pre></div>
+</div>
+<p>For additional configuration options, see the <a class="reference external" href="https://pydata-sphinx-theme.readthedocs.io/en/latest/user_guide/configuring.html">Configuration</a>
+topic for the PyData Sphinx theme, which is the basis for the style of this
+theme.</p>
+<section id="editing-the-css">
+<h2>Editing the CSS<a class="headerlink" href="#editing-the-css" title="Permalink to this headline">#</a></h2>
+<p>If you need to edit or append to the css, create a directory named <code class="docutils literal notranslate"><span class="pre">_static/css</span></code>
+next to your <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> file . Create your <code class="docutils literal notranslate"><span class="pre">custom.css</span></code> file in this directory.
+For example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">body</span> <span class="p">{</span>
+ <span class="n">font</span><span class="o">-</span><span class="n">family</span><span class="p">:</span> <span class="s1">&#39;Source Sans Pro&#39;</span><span class="p">,</span> <span class="n">sans</span><span class="o">-</span><span class="n">serif</span><span class="p">;</span>
+ <span class="n">color</span><span class="p">:</span> <span class="n">black</span><span class="p">;</span>
+ <span class="n">padding</span><span class="o">-</span><span class="n">top</span><span class="p">:</span><span class="n">calc</span><span class="p">(</span><span class="n">var</span><span class="p">(</span><span class="o">--</span><span class="n">pst</span><span class="o">-</span><span class="n">header</span><span class="o">-</span><span class="n">height</span><span class="p">))</span>
+<span class="p">}</span>
+<span class="n">footer</span><span class="p">{</span><span class="n">display</span><span class="p">:</span><span class="n">none</span><span class="p">}</span>
+<span class="n">main</span><span class="p">{</span>
+  <span class="n">overflow</span><span class="p">:</span> <span class="n">auto</span><span class="p">;</span>
+  <span class="n">height</span><span class="p">:</span> <span class="n">calc</span><span class="p">(</span><span class="mi">100</span><span class="n">vh</span> <span class="o">-</span> <span class="mf">3.8</span><span class="n">rem</span><span class="p">);</span>
+  <span class="n">overflow</span><span class="o">-</span><span class="n">y</span><span class="p">:</span> <span class="n">scroll</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="o">.</span><span class="n">prev</span><span class="o">-</span><span class="nb">next</span><span class="o">-</span><span class="n">bottom</span><span class="p">{</span><span class="n">margin</span><span class="o">-</span><span class="n">bottom</span><span class="p">:</span> <span class="mi">6</span><span class="n">rem</span><span class="p">}</span>
+</pre></div>
+</div>
+<p>Next, add the following to your <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> file:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_static_path</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;_static&#39;</span><span class="p">]</span>
+<span class="n">html_css_files</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;css/custom.css&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>Use your <code class="docutils literal notranslate"><span class="pre">custom.css</span></code> file to override the CSS style of this theme.</p>
+</section>
+<section id="adding-breadcrumbs">
+<h2>Adding Breadcrumbs<a class="headerlink" href="#adding-breadcrumbs" title="Permalink to this headline">#</a></h2>
+<p>The <code class="docutils literal notranslate"><span class="pre">ansys-sphinx-theme</span></code> supports the display of breadcrumbs on
+the body of documentation pages to make navigation easier. These
+breadcrumbs are disabled by default. To add
+breadcrumbs to the pages of your documentation, in the <code class="docutils literal notranslate"><span class="pre">conf.py</span></code>
+file, add <code class="docutils literal notranslate"><span class="pre">&quot;show_breadcrumbs&quot;:</span> <span class="pre">True</span></code> to the <code class="docutils literal notranslate"><span class="pre">html_theme_options</span></code> dictionary.</p>
+<p>If you want to add additional ‘root’ breadcrumbs, such as to the Ansys
+Documentation homepage, add them to the <code class="docutils literal notranslate"><span class="pre">html_theme_options</span></code> dictionary as a
+list of tuples with the <code class="docutils literal notranslate"><span class="pre">&quot;additional_breadcrumbs&quot;</span></code> key. The tuples are of the
+form <code class="docutils literal notranslate"><span class="pre">(&quot;Link</span> <span class="pre">text&quot;,</span> <span class="pre">&quot;url&quot;)</span></code>.</p>
+<p>For example, this theme uses the following <code class="docutils literal notranslate"><span class="pre">html_theme_options</span></code>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_theme_options</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;github_url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://github.com/pyansys/pyansys-sphinx-theme&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;show_prev_next&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
+    <span class="s2">&quot;show_breadcrumbs&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+    <span class="s2">&quot;additional_breadcrumbs&quot;</span><span class="p">:</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>When on the module homepage, a breadcrumb will be displayed with the homepage
+title.  However, this title is not accessible to Sphinx from other
+documentation pages. Therefore, the <code class="docutils literal notranslate"><span class="pre">html_short_title</span></code> is used as the display
+text for the documentation homepage breadcrumb. To ensure a consistent user
+experience you should ensure the <code class="docutils literal notranslate"><span class="pre">html_short_title</span></code> (or optionally
+<code class="docutils literal notranslate"><span class="pre">html_title</span></code> if <code class="docutils literal notranslate"><span class="pre">html_short_title</span></code> is not used) is set to the same value as
+the title of the <code class="docutils literal notranslate"><span class="pre">index.rst</span></code> page. For example:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_short_title</span> <span class="o">=</span> <span class="n">html_title</span> <span class="o">=</span> <span class="s1">&#39;Ansys Sphinx Theme&#39;</span>
+</pre></div>
+</div>
+<p>If you want to use the version number in
+the <code class="docutils literal notranslate"><span class="pre">index.rst</span></code> title, use <code class="docutils literal notranslate"><span class="pre">|version|</span></code> to include the package version
+number.</p>
+<section id="custom-icons">
+<h3>Custom Icons<a class="headerlink" href="#custom-icons" title="Permalink to this headline">#</a></h3>
+<p>This theme allows you to have a huge control over the icons displayed in the
+navigation bar.</p>
+</section>
+<section id="adding-new-icons">
+<h3>Adding New Icons<a class="headerlink" href="#adding-new-icons" title="Permalink to this headline">#</a></h3>
+<p>To add a new icon you will need to specify its <code class="docutils literal notranslate"><span class="pre">name</span></code>, the associated <code class="docutils literal notranslate"><span class="pre">URL</span></code>
+and the <code class="docutils literal notranslate"><span class="pre">icon</span></code> and <code class="docutils literal notranslate"><span class="pre">type</span></code>. As an example, consider the following source code
+which adds an icon for sending an email:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_theme_options</span> <span class="o">=</span> <span class="p">{</span>
+ <span class="s2">&quot;icon_links&quot;</span><span class="p">:</span> <span class="p">[</span><span class="nb">dict</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;Mail&quot;</span><span class="p">,</span> <span class="n">url</span><span class="o">=</span><span class="s2">&quot;mailto:me&quot;</span><span class="p">,</span> <span class="n">icon</span><span class="o">=</span><span class="s2">&quot;fas fa-envelope&quot;</span><span class="p">)]</span>
+ <span class="o">...</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>For more information about custom icons, refer to <a class="reference external" href="https://pydata-sphinx-theme.readthedocs.io/en/stable/user_guide/configuring.html?highlight=icons#configure-icon-links">Configure icon links</a>
+section in <a class="reference external" href="https://pydata-sphinx-theme.readthedocs.io/en/stable">PyData Sphinx Theme Docs</a>. Regarding
+<code class="docutils literal notranslate"><span class="pre">FontAwesome</span></code> usage, please visit <a class="reference external" href="https://fontawesome.com/v5/docs/web/setup/get-started">Find and Add Icons</a>.</p>
+</section>
+<section id="hiding-icons">
+<h3>Hiding Icons<a class="headerlink" href="#hiding-icons" title="Permalink to this headline">#</a></h3>
+<p>You can also select which icons should be displayed or not. To do so, add their
+names to the <code class="docutils literal notranslate"><span class="pre">hidden_icons</span></code> list:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_theme_options</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;hidden_icons&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;GitHub&quot;</span><span class="p">],</span>
+    <span class="o">...</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>If you want to hide all icons, you can also use the <code class="docutils literal notranslate"><span class="pre">show_icons</span></code> boolean
+variable:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_theme_options</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;show_icons&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
+    <span class="o">...</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</section>
+</section>
+</section>
+
+
+              </article>
+              
+
+              
+              <footer class="bd-footer-article">
+                  <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+  <a class='left-prev' id="prev-link" href="index.html" title="previous page">
+      <i class="fas fa-angle-left"></i>
+      <div class="prev-next-info">
+          <p class="prev-next-subtitle">previous</p>
+          <p class="prev-next-title">Ansys Sphinx Theme Documentation 0.4.2</p>
+      </div>
+  </a>
+  <a class='right-next' id="next-link" href="style.html" title="next page">
+  <div class="prev-next-info">
+      <p class="prev-next-subtitle">next</p>
+      <p class="prev-next-title">Documentation Style</p>
+  </div>
+  <i class="fas fa-angle-right"></i>
+  </a>
+</div>
+              </footer>
+              
+          </div>
+          
+      </div>
+    </div>
+
+  
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/pydata-sphinx-theme.js?digest=92025949c220c2e29695"></script>
+
+<footer class="bd-footer"><div class="bd-footer__inner container">
+  
+  <div class="footer-item">
+    <p class="copyright">
+    &copy; Copyright (c) 2022 ANSYS, Inc. All rights reserved.<br>
+</p>
+  </div>
+  
+  <div class="footer-item">
+    <p class="sphinx-version">
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.5.0.<br>
+</p>
+  </div>
+  
+</div>
+</footer>
+  </body>
+</html>
