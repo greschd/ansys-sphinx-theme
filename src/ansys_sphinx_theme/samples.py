@@ -246,3 +246,7 @@ class Complex(object):
         if self._imag < 0:
             return f"({self._real} - {abs(self._imag)}j)"
         return f"({self._real} + {self._imag}j)"
+
+    def method(self):
+        """Test documentation of a method."""
+        return 1
